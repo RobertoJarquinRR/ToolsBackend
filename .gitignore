@@ -1,0 +1,6 @@
+.env
+asistente-ac8f9-firebase-adminsdk-fbsvc-d32927e8b3.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
