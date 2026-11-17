@@ -1,10 +1,12 @@
-from openai import OpenAI
 import os
+from openai import OpenAI
 
-apikey = "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"
+apikey = os.getenv("API_KEY_GROQ_IA")
+if not apikey:
+    raise SystemExit("Define API_KEY_GROQ_IA en tu entorno o en tu archivo .env")
 
 client = OpenAI(
-    api_key=( apikey), # type: ignore
+    api_key=apikey,
     base_url="https://api.groq.com/openai/v1",
 )
 
